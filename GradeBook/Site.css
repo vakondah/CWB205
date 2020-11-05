@@ -1,0 +1,21 @@
+﻿body {
+    width: 60%;
+    margin: auto;
+    margin-top:3rem;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h1{
+    text-align:center;
+}
+
+/*#scores{
+    width: 70px;
+    height: 35px;
+}
+
+#btnAdd{
+    width: 250px;
+}*/

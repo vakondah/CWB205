@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz</title>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Colorado cities</h1>
+        <!--My selection list with 4 options:-->
+        <select id="cities">
+            <option value=0>Please select a city...</option>
+            <option value=1>Denver</option>
+            <option value=2>Colorado Springs</option>
+            <option value=3>Boulder</option>
+            <option value=4>Fort Collins</option>
+        </select>
+        <!--Next button calls the function named report() to execute-->
+        <p><button onclick="report()">Go</button></p>
+    </div>
+    <!--div element that will contain the output:-->
+    <div id="output"></div>
+</body>
+</html>

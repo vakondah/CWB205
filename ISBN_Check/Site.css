@@ -1,0 +1,53 @@
+﻿body {
+    
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 20px;
+}
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+    margin: 1rem;
+    padding: 10px;
+}
+
+label {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+button {
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 6px;
+    margin: 10px;
+}
+
+input {
+    padding: 6px;
+    margin: 10px;
+}
+
+#output {
+    background-color: whitesmoke;
+}
+
+#main {
+    background-image: url('Pic/book.jpg');
+    width: 572px;
+    height: 381px;
+}
+
+#danger {
+    color: orangered;
+    padding: 6px;
+    margin: 10px;
+}
+
+#valid {
+    color: darkgreen;
+    padding: 6px;
+    margin: 10px;
+}

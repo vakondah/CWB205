@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook</title>
+    <link href="twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Site.css" rel="stylesheet" />
+    <script src="twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>The Gradebook</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <button id="btnAdd" class="btn btn-outline-primary m-3" onclick="inputScores()">Add Scores</button>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-md-2 col-sm-12 m2" for="scores">Scores: </label>
+                <div class="col-md-10 col-sm-12 text-left" id="scores"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="btn btn-primary m-3" onclick="calculateGrade()">Calculate Grade</button>
+            </div>
+            <div>
+                <button class="btn btn-danger m-3" onclick="clearBox()">Clear Scores</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-sm-12 m2 text-left" id="result"></div>
+            <div class="col-md-10 col-sm-12 m2 text-left" id="maxScore"></div>
+            <div class="col-md-10 col-sm-12 m2 text-left" id="minScore"></div>
+            <div class="col-md-10 col-sm-12 m2 text-left" id="letterGrade"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

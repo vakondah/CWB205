@@ -1,0 +1,391 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A9C14EE-E11D-4042-AD3F-B125FFD526A0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWB205</RootNamespace>
+    <AssemblyName>CWB205</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Class9JQuery\HtmlPage1.html" />
+    <Content Include="Class9JQuery\JavaScript.js" />
+    <Content Include="Class9JQuery\jquery\jquery.js" />
+    <Content Include="Class9JQuery\jquery\jquery.min.js" />
+    <Content Include="Class9JQuery\jquery\jquery.slim.js" />
+    <Content Include="Class9JQuery\jquery\jquery.slim.min.js" />
+    <Content Include="Class9JQuery\StyleSheet1.css" />
+    <Content Include="classWork4\Index.html" />
+    <Content Include="classWork4\JavaScript.js" />
+    <Content Include="ClassWork5\HtmlPage1.html" />
+    <Content Include="ClassWork5\JavaScript.js" />
+    <Content Include="classwork8\HtmlPage1.html" />
+    <Content Include="classwork8\JavaScript.js" />
+    <Content Include="Colorado\Index.html" />
+    <Content Include="Colorado\JavaScript.js" />
+    <Content Include="Colorado\Css.css" />
+    <Content Include="Horses\Index.html" />
+    <Content Include="Horses\JavaScript.js" />
+    <Content Include="Horses\jquery\jquery.js" />
+    <Content Include="Horses\jquery\jquery.min.js" />
+    <Content Include="Horses\jquery\jquery.slim.js" />
+    <Content Include="Horses\jquery\jquery.slim.min.js" />
+    <Content Include="Horses\pic\arabian.jpg" />
+    <Content Include="Horses\pic\horses.jpg" />
+    <Content Include="Horses\pic\quarterhorse.png" />
+    <Content Include="Horses\pic\thoroughbred.png" />
+    <Content Include="Horses\pic\trakehner.png" />
+    <Content Include="Horses\StyleSheet.css" />
+    <Content Include="FutureValue\Index.html" />
+    <Content Include="FutureValue\JavaScript.js" />
+    <Content Include="FutureValue\Site.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap-grid.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap.css" />
+    <Content Include="FutureValue\twitter-bootstrap\css\bootstrap.min.css" />
+    <Content Include="FutureValue\twitter-bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="FutureValue\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="FutureValue\twitter-bootstrap\js\bootstrap.js" />
+    <Content Include="FutureValue\twitter-bootstrap\js\bootstrap.min.js" />
+    <Content Include="GradeBook\Index.html" />
+    <Content Include="GradeBook\JavaScript.js" />
+    <Content Include="GradeBook\Site.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap-grid.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap.css" />
+    <Content Include="GradeBook\twitter-bootstrap\css\bootstrap.min.css" />
+    <Content Include="GradeBook\twitter-bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="GradeBook\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="GradeBook\twitter-bootstrap\js\bootstrap.js" />
+    <Content Include="GradeBook\twitter-bootstrap\js\bootstrap.min.js" />
+    <Content Include="GrossPay\HtmlPage1.html" />
+    <Content Include="GrossPay\JavaScript.js" />
+    <Content Include="HomeWork1\Index.html" />
+    <Content Include="HomeWork1\js.js" />
+    <Content Include="HomeWork1\site.css" />
+    <Content Include="ISBN_Check\Index.html" />
+    <Content Include="ISBN_Check\JavaScript.js" />
+    <Content Include="ISBN_Check\Pic\book.jpg" />
+    <Content Include="ISBN_Check\Site.css" />
+    <Content Include="JQueryIntro\Css.css" />
+    <Content Include="JQueryIntro\Index.html" />
+    <Content Include="JQueryIntro\JavaScript.js" />
+    <Content Include="JQueryIntro\jquery\jquery.js" />
+    <Content Include="JQueryIntro\jquery\jquery.min.js" />
+    <Content Include="JQueryIntro\jquery\jquery.slim.js" />
+    <Content Include="JQueryIntro\jquery\jquery.slim.min.js" />
+    <Content Include="Quiz2\Css.css" />
+    <Content Include="Quiz2\Index.html" />
+    <Content Include="Quiz2\JavaScript.js" />
+    <Content Include="Quiz2\jquery\jquery.js" />
+    <Content Include="Quiz2\jquery\jquery.min.js" />
+    <Content Include="Quiz2\jquery\jquery.slim.js" />
+    <Content Include="Quiz2\jquery\jquery.slim.min.js" />
+    <Content Include="Quiz\Index.html" />
+    <Content Include="Quiz\JavaScript.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_alert.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_badge.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_button-group.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_buttons.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_card.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_carousel.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_close.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_code.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_custom-forms.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_dropdown.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_forms.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_functions.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_grid.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_images.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_input-group.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_jumbotron.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_list-group.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_media.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_mixins.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_modal.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_nav.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_navbar.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_pagination.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_popover.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_print.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_progress.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_reboot.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_root.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_spinners.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\bootstrap.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_tables.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_toasts.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_tooltip.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_transitions.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_type.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_utilities.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\_variables.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_float.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_image.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_size.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_align.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_background.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_display.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_float.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_interactions.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_overflow.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_position.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_shadows.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_stretched-link.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_text.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="FutureValue\twitter-bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_alert.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_badge.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_button-group.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_buttons.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_card.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_carousel.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_close.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_code.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_custom-forms.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_dropdown.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_forms.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_functions.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_grid.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_images.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_input-group.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_jumbotron.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_list-group.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_media.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_mixins.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_modal.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_nav.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_navbar.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_pagination.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_popover.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_print.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_progress.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_reboot.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_root.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_spinners.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\bootstrap.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_tables.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_toasts.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_tooltip.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_transitions.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_type.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_utilities.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\_variables.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_float.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_image.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_size.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_align.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_background.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_display.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_float.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_interactions.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_overflow.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_position.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_shadows.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_stretched-link.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_text.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="GradeBook\twitter-bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="Class9JQuery\jquery\jquery.min.map" />
+    <Content Include="Class9JQuery\jquery\jquery.slim.min.map" />
+    <Content Include="JQueryIntro\jquery\jquery.min.map" />
+    <Content Include="JQueryIntro\jquery\jquery.slim.min.map" />
+    <Content Include="Horses\jquery\jquery.min.map" />
+    <Content Include="Horses\jquery\jquery.slim.min.map" />
+    <None Include="packages.config" />
+    <Content Include="Quiz2\jquery\jquery.min.map" />
+    <Content Include="Quiz2\jquery\jquery.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15865</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

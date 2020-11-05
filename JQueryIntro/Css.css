@@ -1,0 +1,55 @@
+﻿/*  Aliaksandra Hrechka
+    CWB 205
+    October 29, 2020
+    Intro to jQuery
+    Descriptionn: This program is a small shopping list
+    that allows to add new list item, remove the old one by double clicking
+    on the element, and toggle between two colors of the element by clicking on it.*/
+body {
+}
+p input {
+    text-align:center;
+    background-color: palegreen;
+    height: 30px;
+    width: 240px;
+    padding: 5px;
+    border-radius:25px;
+}
+
+.green {
+    text-align: center;
+    background-color: palegreen;
+    height: 30px;
+    width: 240px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.yellow {
+    text-align: center;
+    background-color: #ffd800;
+    height: 30px;
+    width: 240px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+input {
+    border: none;
+    margin-top: 5px;
+}
+
+.item{
+    text-align:center;
+}
+
+button {
+    background-color: darkgreen;
+    color: azure;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    width: 240px;
+    height: 30px;
+}

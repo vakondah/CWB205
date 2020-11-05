@@ -1,0 +1,38 @@
+﻿body {
+    width: 50%;
+    margin: auto;
+    border: solid 2px #060b1f;
+    margin-top: 30px;
+}
+h1{
+    text-align:center;
+}
+
+div{
+    justify-content: center;
+    display: flex;
+}
+
+#red {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    width: 150px;
+    height: 30px;
+}
+#blue {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    width: 150px;
+    height: 30px;
+}
+
+.changeRed{
+    color: red;
+}
+.changeBlue{
+    color:cornflowerblue;
+}

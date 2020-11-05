@@ -1,0 +1,35 @@
+﻿<!--Aliaksandra Hrechka
+    CWB 205
+    October 29, 2020
+    Intro to jQuery
+    Descriptionn: This program is a small shopping list
+    that allows to add new list item, remove the old one by double clicking
+    on the element, and toggle between two colors of the element by clicking on it. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Shopping List</title>
+    <link href="Css.css" rel="stylesheet" />
+    <script src="jquery/jquery.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<!-- Next line of code disables the browser's context menu -->
+<body oncontextmenu="return false;">
+    <h1>Shopping List</h1>
+
+    <div>
+        <button id="add">Add new item</button>
+    </div>
+
+    <div id="list">
+        <p><input type="text" class="item" placeholder="Milk" /></p>
+        <p><input type="text" class="item" placeholder="Eggs" /></p>
+        <p><input type="text" class="item" placeholder="Bread" /></p>
+    </div>
+
+    <h5>Click "Add New Item" to add new list item</h5>
+    <h5>Double click to remove an item from the list</h5>
+    <h5>Click once to change color of the list item</h5>
+</body>
+</html>
